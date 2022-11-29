@@ -1,0 +1,26 @@
+<?php
+    $operando1 = $_GET['operando1'];
+    $operando2 = $_GET['operando2'];
+    $operador = $_GET['operador'];
+
+    if($operador == "+"){
+        $solucion = $operando1 + $operando2;
+
+    }else if($operador == "-"){
+        $solucion = $operando1 - $operando2;
+
+    }else if($operador == "*"){
+        $solucion = $operando1 * $operando2;
+
+    }else if($operador == "/"){
+        if($operando2 == 0 ){
+            echo "No se puede dividir entre cero";
+        }
+        $solucion = $operando1 / $operando2;
+    }
+
+    echo "La solución es: ".$solucion;
+?>
+
+
+.

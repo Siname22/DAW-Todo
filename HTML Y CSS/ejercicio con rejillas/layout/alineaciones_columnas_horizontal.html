@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alineacion de columnas Horizontal</title>
+    <link rel="stylesheet" type="text/css" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <style>
+        .row{
+            margin-top: 30px;
+            background-color: #000000;
+        }
+        .row > div{
+            background-color: aquamarine;
+            padding-top: 10px;
+            border: 1px solid #000000;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Alineación de columnas Horizontal</h1>
+    <div class="container">
+        <div class="row justify-content-start">
+            <div class="col-4">Columna 1</div>
+            <div class="col-4">Columna 2</div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-4">Columna 1</div>
+            <div class="col-4">Columna 2</div>
+        </div>
+
+        <div class="row justify-content-end">
+            <div class="col-4">Columna 1</div>
+            <div class="col-4">Columna 2</div>
+        </div>
+
+        <div class="row justify-content-around">
+            <div class="col-4">Columna 1</div>
+            <div class="col-4">Columna 2</div>
+        </div>
+
+        <div class="row justify-content-between">
+            <div class="col-4">Columna 1</div>
+            <div class="col-4">Columna 2</div>
+        </div>
+
+        <div class="row justify-content-evenly">
+            <div class="col-4">Columna 1</div>
+            <div class="col-4">Columna 2</div>
+        </div>
+    </div>
+
+<script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+#cabeceraPagina{
+    font-size: 70px;
+}
+#contenedor{
+    background-color: #9a6677;
+}
+#cabeceraContenedor{
+    font-family: "Yu Gothic";
+    font-style: italic;
+    font-size: 50px;
+}
+#defaultGrid,
+#defaultGrid1,
+#defaultGrid2,
+#defaultGrid3,
+#defaultGrid4,
+#defaultGrid5,
+#defaultGrid6,
+#defaultGrid7,
+#defaultGrid8{
+    height: 75%;
+    font-style: oblique;
+    font-size: 25px;
+    box-shadow: 5px 2px 5px 2px black;
+}
+#pDentroFilas{
+    font-style: revert;
+    font-size: 25px;
+}
+#pGridGrande,
+#pGridGrande1,
+#pGridGrande2,
+#pGridGrande3,
+#pGridGrande4,
+#pGridGrande5,
+#pGridGrande6,
+#pGridGrande7,
+#pGridGrande8,
+#pGridGrande9,
+#pGridGrande10,
+#pGridGrande11{
+    height: 110%;
+    color: white;
+    background-color: black;
+    font-family: 'DejaVu Sans Mono', Menlo, Consolas, monospace;
+    font-size: 40px;
+}
+
+#pGridPequeño,
+#pGridPequeño1,
+#pGridPequeño2,
+#pGridPequeño3,
+#pGridPequeño4,
+#pGridPequeño5,
+#pGridPequeño6,
+#pGridPequeño7,
+#pGridPequeño8,
+#pGridPequeño9,
+#pGridPequeño10,
+#pGridPequeño11
+{
+    height: 25%;
+    font-size: 10px;
+    color: darkblue;
+    font-family: "Agency FB";
+    background-color: whitesmoke;
+}
+
+#div30_0,
+#div30_1,
+#div30_2,
+#div30_3,
+#div30_4,
+#div30_5,
+#div30_6,
+#div30_7,
+#div30_8,
+#div30_9,
+#div30_10,
+#div30_11,
+#div30_12,
+#div30_13,
+#div30_14,
+#div30_15,
+#div30_16,
+#div30_17,
+#div30_18,
+#div30_19,
+#div30_20,
+#div30_21,
+#div30_22,
+#div30_23{
+    text-shadow: 0 0 3px #FF0000;
+    height: 100px;
+    font-size: 15px;
+    background-color: #ec8b8b;
+}

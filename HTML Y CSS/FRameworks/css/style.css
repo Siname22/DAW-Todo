@@ -1,0 +1,125 @@
+body {
+    background: #2f84de;
+    color: #333;
+    font-size: 11px;
+    height: auto;
+    padding-bottom: 20px;
+    font: 13px/1.5 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+}
+
+h1 {
+    font-size: 25px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    padding-top: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 23px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    border: 1px solid #666;
+    overflow: hidden;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container{
+    padding: 3%;
+    background-color: aqua;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+/*
+  960 Grid System ~ Core CSS.
+  Learn more ~ http://960.gs/
+
+  Licensed under GPL and MIT.
+*/
+
+/*
+  Forces backgrounds to span full width,
+  even if there is horizontal scrolling.
+  Increase this if your layout is wider.
+
+  Note: IE6 works fine without this fix.
+*/
+
+
+/* `Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.grid_anchoMenos45,
+.grid_ancho30,
+.grid_anchoMaximo,
+.grid_anchoMenos30,
+.grid_ancho45 {
+    display: inline;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+
+/* `Grid >> 24 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container .grid_ancho30 {
+    width: 200px;
+}
+.container .grid_anchoMenos30 {
+    width: 1020px;
+}
+
+.container .grid_ancho45 {
+    width: 810px;
+}
+.container .grid_anchoMenos45{
+    width: 410px;
+}
+
+
+.container .grid_anchoMaximo {
+    width: 1230px;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after {
+    content: '.';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:after,
+.container:after {
+    clear: both;
+}
+
+/*
+  The following zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+*/
+
+.clearfix,
+.container {
+    zoom: 1;
+}
+

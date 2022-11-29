@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reordenacion de columnas</title>
+    <link rel="stylesheet" type="text/css" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <style>
+        .row{
+            margin-top: 30px;
+            background-color: #000000;
+        }
+        .row > div{
+            background-color: aquamarine;
+            padding-top: 10px;
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+<h1>Reordenacion</h1>
+<div class="container">
+    <div class="row">
+        <div class="col order-1">Columna 1</div>
+        <div class="col order-2">Columna 2</div>
+        <div class="col order-3">Columna 3</div>
+    </div>
+    <div class="row">
+        <div class="col order-2 order-md-2">Columna 1</div>
+        <div class="col order-1 order-md-3">Columna 2</div>
+        <div class="col order-3 order-md-1">Columna 3</div>
+    </div>
+
+    <div class="row">
+        <div class="col order-3">Columna 1</div>
+        <div class="col order-2">Columna 2</div>
+        <div class="col order-1">Columna 3</div>
+    </div>
+</div>
+
+<script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
