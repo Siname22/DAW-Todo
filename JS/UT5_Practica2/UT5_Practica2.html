@@ -38,23 +38,22 @@
     de opciones (optgroup) de manera que el primero permita deshabilitar un grupo o varios grupos de opciones del segundo.
     -->
     <div id="formularioEjercicio2">
-        <p>Ejercicio 1:</p>
+        <p>Ejercicio 2:</p>
         <form>
-            <select id="ej2Select">
-                <option>PNG</option>
-                <option>JPEG</option>
-                <option>GIF</option>
-                <option>TGA</option>
+            <select id="selectDisableGroup">
+                <option>Equipos de Futbol</option>
+                <option>Tipos de formatos de Imagen</option>
+                <option>Marcas de rotuladores</option>
+                <option>Marcas de Coches</option>
             </select>
-            <input type="button" id="buttonComenzarEj2" onclick="cogerDatosSelectDatalist()" value="Coger los datos"/>
-            <p>Datalist:</p>
-            <input type="text" id="getValueDatalist2" list="ej1Datalist">
-            <datalist id="ej2Datalist">
-                <option value="PNG">PNG</option>
-                <option value="JPEG">JPEG</option>
-                <option value="GIF">GIF</option>
-                <option value="TGA">TGA</option>
-            </datalist>
+            <select id="selectGroup">
+                <optgroup label="">
+                    <option>PNG</option>
+                    <option>JPEG</option>
+                    <option>GIF</option>
+                    <option>TGA</option>
+                </optgroup>
+            </select>
         </form>
     </div>
     <p id="datosGuardados2"></p>

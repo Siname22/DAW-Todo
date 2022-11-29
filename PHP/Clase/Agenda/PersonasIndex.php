@@ -49,7 +49,8 @@ if (isset( $_REQUEST["mensaje"])){
             <td><a href='PersonasShow.php?id=<?=$fila["id"]?>'><?=$fila["nombre"]?></a></td>
             <td><a href='PersonasShow.php?id=<?=$fila["id"]?>'><?=$fila["apellidos"]?></a></td>
             <td><a href='PersonasShow.php?id=<?=$fila["id"]?>'><?=$fila["telefono"]?></a></td>
-            <td align="center"><a href='PersonasUpdateEstrella.php?id=<?=$fila["id"]?>&estrella=<?=$fila["estrella"]?>'>
+            <td align="center">
+                <a href='PersonasUpdateEstrella.php?id=<?=$fila["id"]?>&estrella=<?=$fila["estrella"]?>'>
                     <img src='<?=$fila["estrella"] == 1 ? "llena.png" : "vacia.png"?>' style='width: 16px'></a></td>
             <td><?=$fila["nombrecategoria"]?></a></td>
             <td><a href='PersonasDestroy.php?id=<?=$fila["id"]?>'>(X)              </a></td>
