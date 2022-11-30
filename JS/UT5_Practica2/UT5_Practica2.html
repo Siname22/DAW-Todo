@@ -41,43 +41,48 @@
     -->
     <div id="formularioEjercicio2">
         <h2>Ejercicio 2:</h2>
+
         <form>
-            <select id="selectChoseDisableGroup" onclick="disableSelect()">
-                <optgroup label="Selecciona los que quieres deshabilitar">
-                    <option value="equiposFutbol">Equipos de Futbol</option>
-                    <option value="formatosImagen">Tipos de formatos de Imagen</option>
-                    <option value="marcasZapatos">Marcas de Zapatos</option>
-                    <option value="marcasCoches">Marcas de Coches</option>
-                </optgroup>
+            <select id="selectChoseDisableGroup" onchange="disableSelect()" multiple size="4">
+                <option value="equiposFutbol">Equipos de Futbol</option>
+                <option value="formatosImagen">Tipos de formatos de Imagen</option>
+                <option value="marcasZapatos">Marcas de Zapatos</option>
+                <option value="marcasCoches">Marcas de Coches</option>
             </select>
 
-            <select id="selectDiabled">
-                <optgroup label="equiposFutbol">
+            <select id="selectDisabled" multiple size ='20' disabled>
+
+                <optgroup label="Equipos de Futbol" id="equiposFutbol">
                     <option>PSG</option>
                     <option>Madrid</option>
                     <option>Barcelona</option>
                     <option>Leganes</option>
                 </optgroup>
-                <optgroup label="formatosImagen">
+
+                <optgroup label="Formatos de Imagen" id="formatosImagen">
                     <option>PNG</option>
                     <option>JPEG</option>
                     <option>GIF</option>
                     <option>TGA</option>
                 </optgroup>
-                <optgroup label="marcasZapatos">
+
+                <optgroup label="Marcas de Zapatos" id="marcasZapatos">
                     <option>Nike</option>
                     <option>Adidas</option>
                     <option>Vans</option>
                     <option>Puma</option>
                 </optgroup>
-                <optgroup label="marcasCoches">
+
+                <optgroup label="Marcas de Coches" id="marcasCoches">
                     <option>Peougeot</option>
                     <option>Citroen</option>
                     <option>Mercedes</option>
                     <option>Telsa</option>
                 </optgroup>
+
             </select>
         </form>
+
     </div>
     <p id="datosGuardados2"></p>
     </body>
