@@ -21,3 +21,8 @@ function cogerDatosSelectDatalist() {
         "de lo que selecciones en el input, ya coges el valor. <br>Mientras que en el select no hace falta un input para " +
         "coger el dato seleccionado";
 }
+
+function disableSelect(){
+    var selectChoseDisableGroup = document.getElementById("selectChoseDisableGroup");
+    var selectDisabled = document.getElementById("selectDiabled");
+}
