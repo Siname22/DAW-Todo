@@ -6,6 +6,7 @@ function iniciar () {
     document.getElementById('file-input').addEventListener('change', leerArchivo, false);
     document.getElementById('nombre').innerHTML = "Contenido del archivo";
 }
+
 //leo el arhcivo y guardo el dato
 function leerArchivo(e){
     var archivo = e.target.files[0];
@@ -32,6 +33,7 @@ function leerArchivo(e){
     var procesar = document.getElementById('file-input');
     procesar.style.display="block";
 }
+
 //Muestro el contenido
 function mostrarContenido(contenido) {
     var nombre = document.getElementById("nombre");
