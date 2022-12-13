@@ -1,59 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a73f702-d0fc-425d-be1b-4b26ebecd03b" name="Changes" comment="creacion ejercicio 1 bootstrap">
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap-utilities.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap-utilities.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap-utilities.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap-utilities.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/css/estilo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/js/bootstrap.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/js/bootstrap.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/js/bootstrap.esm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/js/bootstrap.esm.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/bootstrap-5.0.2-dist/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/layout/images/fotoMain.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/layout/images/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/layout/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/layout/images/videoPrototipo.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagina web completa con bootstrap/layout/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6a73f702-d0fc-425d-be1b-4b26ebecd03b" name="Changes" comment="creacion ejercicio 2 bootstrap" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +36,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/alumno/PhpstormProjects/Raul Mendez Poblete/HTML Y CSS/pagina web completa con bootstrap/layout",
+    "last_opened_file_path": "/home/alumno/PhpstormProjects/Raul Mendez Poblete/JS",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -125,6 +73,7 @@
       <workItem from="1669710746437" duration="19000" />
       <workItem from="1670841628180" duration="3986000" />
       <workItem from="1670917497277" duration="3051000" />
+      <workItem from="1670930914127" duration="115000" />
     </task>
     <task id="LOCAL-00001" summary="creacion ejercicio 1 bootstrap">
       <created>1670917562385</created>
@@ -133,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670917562385</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="creacion ejercicio 2 bootstrap">
+      <created>1670930986650</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670930986650</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +108,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="creacion ejercicio 1 bootstrap" />
-    <option name="LAST_COMMIT_MESSAGE" value="creacion ejercicio 1 bootstrap" />
+    <MESSAGE value="creacion ejercicio 2 bootstrap" />
+    <option name="LAST_COMMIT_MESSAGE" value="creacion ejercicio 2 bootstrap" />
   </component>
 </project>

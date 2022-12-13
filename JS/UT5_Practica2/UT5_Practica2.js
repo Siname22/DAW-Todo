@@ -4,7 +4,7 @@ function iniciar () {
 
 function cogerDatosSelectDatalist() {
     //Mensaje
-    var mensaje = document.getElementById("datosGuardados");
+    var mensaje = document.getElementById("datosGuardados1");
     //Select
     var select = document.getElementById("ej1Select");
     for (var i = 0, iLen = select.options.length; i < iLen; i++) {
