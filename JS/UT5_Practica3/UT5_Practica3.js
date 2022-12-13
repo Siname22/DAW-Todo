@@ -1,7 +1,6 @@
-document.addEventListener("load", iniciar,false);
+window.addEventListener("load", iniciar);
 
 function iniciar () {
-
     var mostrarDatos = document.getElementById('mostrarDatos');
     mostrarDatos.addEventListener('click',enseniarDatos,false);
 
@@ -27,30 +26,30 @@ function enseniarDatos(){
     mostrarPantalla.innerHTML += "Tu uso del movil es de: " + usoMovil + "<br>";
 }
 
- function mostrarDatosSelect(){
-     var mensaje = document.getElementById("datosGuardados2");
-     //Select
-     var select = document.getElementById("optionsCategorias");
-     for (var i = 0, iLen = select.options.length; i < iLen; i++) {
-         if (select.options[i].selected) {
-             var opcionSelectedSelect = select.options[i].value;
-         }
-     }
-     mensaje.innerHTML = "Los datos del select: " + opcionSelectedSelect + ".<br>";
+function mostrarDatosSelect(){
+    var mensaje = document.getElementById("datosGuardados2");
+    //Select
+    var select = document.getElementById("optionsCategorias");
+    for (var i = 0, iLen = select.options.length; i < iLen; i++) {
+        if (select.options[i].selected) {
+            var opcionSelectedSelect = select.options[i].value;
+        }
+    }
+    mensaje.innerHTML = "Los datos del select: " + opcionSelectedSelect + ".<br>";
 }
 
 function disableSelect(){
-    var selectDisabled = document.getElementById("tiposCategorias");
+    var optionsCategorias = document.getElementById("optionsCategorias");
 
     var grupoDisabled = recuperarSeleccionados();
     console.log(grupoDisabled);
 
-    selectDisabled.disabled = false;
+    optionsCategorias.disabled = false;
     if (grupoDisabled.length == 0){
-        selectDisabled.disabled = true;
+        optionsCategorias.disabled = true;
     }
 
-    var inputs = selectDisabled.getElementsByTagName("optgroup");
+    var inputs = optionsCategorias.getElementsByTagName("optgroup");
     for(var i = 0; i < inputs.length; i++) {
         inputs[i].disabled = false;
     }
@@ -62,11 +61,11 @@ function disableSelect(){
 }
 
 function recuperarSeleccionados(){
-    var selectChoseDisableGroup = document.getElementById("optionsCategorias");
+    var tiposCategorias = document.getElementById("tiposCategorias");
     var grupoDisabled = new Array();
-    for (var i = 0, iLen = selectChoseDisableGroup.options.length; i < iLen; i++) {
-        if (selectChoseDisableGroup.options[i].selected) {
-            grupoDisabled.push(selectChoseDisableGroup.options[i].value);
+    for (var i = 0, iLen = tiposCategorias.options.length; i < iLen; i++) {
+        if (tiposCategorias.options[i].selected) {
+            grupoDisabled.push(tiposCategorias.options[i].value);
             console.log(grupoDisabled);
         }
     }
