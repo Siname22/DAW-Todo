@@ -1,0 +1,128 @@
+h3 {
+    font-weight: normal;
+    color: #458ace;
+}
+h4 {
+    font-weight: normal;
+    color: #717171;
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.t-container {
+    margin-top: 5%;
+    padding: 0 2em;
+}
+.t-tabs, .t-contents {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 2% 0 2%;
+    box-sizing: border-box;
+}
+.t-tabs li {
+    color: #dedede;
+    padding: 0.5em 0.7em;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    font-size: 1.1em;
+    background: #717171;
+    border-bottom: 0;
+    min-width: 40px;
+    margin-right: 2px;
+    margin-bottom: 0 !important;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.t-tabs li:hover {
+    background-color: #545454;
+    color: #d2d2d2;
+}
+.t-tabs li.selected {
+    color: #458ace;
+    cursor: default;
+    background: #333;
+}
+.t-contents {
+    padding:0 !important
+}
+.t-content {
+    padding: 0 1em;
+    background-color: #333;
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    color: #b7b7b7;
+    line-height: 1.3em;
+    text-align: justify;
+    z-index: 1;
+    position: relative;
+    max-height: 0;
+    transition: max-height 0.5s ease 0s;
+    overflow: hidden;
+}
+.t-content.selected {
+    max-height: 3000px;
+    transition: max-height 1.25s ease 0.5s;
+}
+.t-content ul {
+    padding-left: 1.4em;
+    margin-bottom: 1.75em;
+}
+.t-content ul li {
+    margin-bottom: 0.5em;
+}
+.t-content ul li:before {
+    content: "●";
+    float: left;
+    margin-left: -19px;
+    color: #3c7ab7;
+    z-index: 2;
+    position: relative;
+}
+
+code {
+    background: #1f1f1f70;
+    padding: 0.01em 0.4em;
+    border-radius: 2px;
+    color: #4388cc;
+    font-size: 1.2em;
+    border: 1px solid #292929;
+}
+code.code-block {
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-left: 4px;
+    border-left: 8px solid #3c7ab7;
+    font-size: 0.9em;
+    padding-left: 0.75em;
+}
+code.code-block span {
+    color: #717171;
+}
+.separator {
+    width: 100%;
+    float: left;
+    height: 0;
+    margin: 3em 0;
+}
+.t-arrow {
+    padding: 0 5em;
+    display: table;
+}
+.t-arrow:before {
+    content: "";
+    border: 2em solid transparent;
+    float: left;
+    z-index: 222;
+    border-top: 2em solid #333;
+    bottom: 0;
+    display: block;
+}
+#t-multiple {
+    display: none;
+}
+#t-multiple.showit {
+    display: block !important;
+}
