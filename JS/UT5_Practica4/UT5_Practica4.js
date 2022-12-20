@@ -71,29 +71,3 @@ function recuperarSeleccionados(){
     }
     return grupoDisabled;
 }
-//VALIDACION
-
-function validaNombre(){
-    var elemento = document.getElementById("nombre");
-    if (!elemento.checkValidity()){
-        error(elemento);
-        return false;
-    }
-    return true;
-}
-
-function validar(e){
-    if (validaNombre()){
-        return true;
-    }else{
-        e.preventDefault();
-        return false;
-    }
-}
-
-function error(elemento){
-    document.getElementById("mensajeError").innerHTML =
-        elemento.validationMessage;
-    elemento.className="error";
-    elemento.focus();
-}

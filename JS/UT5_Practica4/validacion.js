@@ -19,20 +19,7 @@ function validaNombre() {
     return true;
 }
 
-function validaApellido() {
-    var elemento = document.getElementById("apellido");
-    if (!elemento.checkValidity()) {
-        if (elemento.validity.valueMissing) {
-            error2(elemento, "Debe introducir un apellido")
-        }
-        if (elemento.validity.patternMismatch) {
-            error2(elemento, "El nombre debe tener entre 2 y 50 caracteres");
-        }
-        //error(elemento);
-        return false;
-    }
-    return true;
-}
+
 
 function validaEdad() {
     var elemento = document.getElementById("edad");
@@ -47,20 +34,6 @@ function validaEdad() {
             error2(elemento, "El valor debe ser mayor o igual que 18");
         }
         //error(elemento);
-        return false;
-    }
-    return true;
-}
-
-function validaTelefono() {
-    var elemento = document.getElementById("telefono");
-    if (!elemento.checkValidity()) {
-        if (elemento.validity.valueMissing) {
-            error2(elemento, "Debe introducir un teléfono")
-        }
-        if (elemento.validity.patternMismatch) {
-            error2(elemento, "El telefono debe tener 9 numeros");
-        } //error(elemento);
         return false;
     }
     return true;
