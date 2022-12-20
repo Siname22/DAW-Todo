@@ -3,14 +3,12 @@ window.addEventListener("load", iniciar);
 function iniciar () {
     var mostrarDatos = document.getElementById('mostrarDatos');
     mostrarDatos.addEventListener('click',enseniarDatos,false);
-    mostrarDatos.addEventListener("click", validar, false);
 
     var tiposCategorias = document.getElementById('tiposCategorias');
     tiposCategorias.addEventListener('change',disableSelect,false);
 
     var optionsCategorias = document.getElementById('optionsCategorias');
     optionsCategorias.addEventListener('change',mostrarDatosSelect,false);
-
 }
 
 
@@ -73,7 +71,6 @@ function recuperarSeleccionados(){
     }
     return grupoDisabled;
 }
-
 //VALIDACION
 
 function validaNombre(){
