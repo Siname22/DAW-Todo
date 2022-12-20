@@ -82,61 +82,8 @@ function validaNombre(){
     return true;
 }
 
-function validaFechaNac(){
-    const DATE_REGEX = /^(0[1-9]|[1-2]\d|3[01])(\/)(0[1-9]|1[012])\2(\d{4})$/
-    const CURRENT_YEAR = new Date().getFullYear();
-    let fechaNac = document.getElementById("nacimiento");
-
-    var validateDate = (fechaNac) => {
-        //Comprueba que el numero de meses sea menor o igual a 12 y
-        if (!fechaNac.match(DATE_REGEX)){
-            return false;
-        }
-
-        //Comprobacion del dia del mes.
-        var dia = parseInt(fechaNac.split("/")[0]);
-        var mes = parseInt(fechaNac.split("/")[1]);
-        var anio = parseInt(fechaNac.split("/")[2]);
-        var mesesAnio = new Date(anio, mes, 0).getDate();
-        if (dia > mesesAnio){
-            return false;
-        }
-        //Comprobacion del año
-        if (anio > CURRENT_YEAR){
-            return false;
-        }
-        return true;
-    }
-}
-
-function validarEmail(valor) {
-    //Expresion regular que indica las tres partes del email (nombre + @ + dominio)
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/.test(valor)){
-        return true;
-    }
-    return false;
-}
-
-function validarPaswd(){
-    var password = document.getElementById("contrasenia").value;
-
-    var espacios = false;
-    var cont = 0;
-
-    while (!espacios && (cont < p1.length)) {
-        if (password.charAt(cont) == " ")
-            espacios = true;
-        cont++;
-    }
-
-    if (espacios) {
-        alert ("La contraseña no puede contener espacios en blanco");
-        return false;
-    }
-}
-
 function validar(e){
-    if (validaNombre() && validaFechaNac() && validarEmail() && validarPaswd()){
+    if (validaNombre()){
         return true;
     }else{
         e.preventDefault();
