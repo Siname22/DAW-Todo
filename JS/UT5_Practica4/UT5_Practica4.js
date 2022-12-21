@@ -1,8 +1,8 @@
 window.addEventListener("load", iniciar);
 
 function iniciar () {
-    var mostrarDatos = document.getElementById('mostrarDatos');
-    mostrarDatos.addEventListener('click',enseniarDatos,false);
+    //var mostrarDatos = document.getElementById('mostrarDatos');
+    //mostrarDatos.addEventListener('click',enseniarDatos,false);
 
     var tiposCategorias = document.getElementById('tiposCategorias');
     tiposCategorias.addEventListener('change',disableSelect,false);

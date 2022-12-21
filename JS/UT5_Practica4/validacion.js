@@ -1,7 +1,7 @@
 window.onload = iniciar;
 
 function iniciar() {
-    document.getElementById("enviar").addEventListener('click', validar, false);
+    document.getElementById("mostrarDatos").addEventListener('click', validar, false);
 }
 
 function validaNombre() {
@@ -18,20 +18,14 @@ function validaNombre() {
     }
     return true;
 }
-
-
-
-function validaEdad() {
-    var elemento = document.getElementById("edad");
+function validaContrasenia() {
+    var elemento = document.getElementById("contrasenia");
     if (!elemento.checkValidity()) {
         if (elemento.validity.valueMissing) {
-            error2(elemento, "Debe introducir una edad")
+            error2(elemento, "Debe introducir una contrasenia")
         }
-        if (elemento.validity.rangeOverflow) {
-            error2(elemento, "El valor debe ser menor de 100")
-        }
-        if (elemento.validity.rangeUnderflow) {
-            error2(elemento, "El valor debe ser mayor o igual que 18");
+        if (elemento.validity.patternMismatch) {
+            error2(elemento, "La contraseña debe tener al menos 8 caracteres");
         }
         //error(elemento);
         return false;
@@ -40,7 +34,7 @@ function validaEdad() {
 }
 
 function validafecha() {
-    var elemento = document.getElementById("fecha");
+    var elemento = document.getElementById("nacimiento");
     if (!elemento.checkValidity()) {
         if (elemento.validity.valueMissing) {
             error2(elemento, "Debe introducir una fecha")
@@ -71,8 +65,8 @@ function validacorreo() {
 
 function validar(e) {
     borrarError();
-    if (validaNombre() && validaApellido() && validaEdad() && validaTelefono() && validafecha() && validacorreo() && confirm("Pulsa aceptar si deseas enviar el formulario")) {
-        leer_datos();
+    if (validaNombre() && validaContrasenia() && validafecha() && validacorreo() && confirm("Pulsa aceptar si deseas enviar el formulario")) {
+        enseniarDatos();
     } else {
         e.preventDefault();
         return false;
@@ -90,25 +84,4 @@ function borrarError() {
     for (var i = 0; i < formulario.elements.length; i++) {
         formulario.elements[i].className = "";
     }
-}
-
-function leer_datos(){
-
-    var sistemasoperativos = document.getElementById("sistemas_operativos").value;
-    var nombre = document.getElementById("nombre").value;
-    var apellidos = document.getElementById("apellido").value;
-    var telefono = document.getElementById("telefono").value;
-    var edad = document.getElementById("edad").value;
-    var fecha = document.getElementById("fecha").value;
-    var correo = document.getElementById("correo").value;
-
-
-    document.getElementById("mostrar_sistemas_operativos").innerHTML = "Sistema opertaivo es:" + sistemasoperativos;
-    document.getElementById("mostrar_nombre").innerHTML = "El nombre es: " + nombre;
-    document.getElementById("mostrar_apellido").innerHTML = "El apellido es: " + apellidos;
-    document.getElementById("mostrar_tlfn").innerHTML =" El telefono es " + telefono;
-    document.getElementById("mostrar_edad").innerHTML = " La edad es: " + edad ;
-    document.getElementById("mostrar_fecha").innerHTML = "La fecha es: " + fecha;
-    document.getElementById("mostrar_correo").innerHTML = "El correo es: " + correo;
-
 }
