@@ -48,7 +48,7 @@ function setCookie(nombre, valor, expiracion){
     var d = new Date();
     d.setTime(d.getTime()+expiracion*24*60*60*1000);
     var expiracion = "expires="+d.toUTCString();
-    document.cookie = nombre + "=" +valor + ";" + expiracion += ";path=/";
+    document.cookie = nombre + "=" +valor + ";" + expiracion + ";path=/";
 }
 
 function getCookie(nombre){
@@ -56,7 +56,7 @@ function getCookie(nombre){
     var array = document.cookie.split(";");
     for (var i = 0; i<array.length; i++){
         var c = array[i];
-        while (c.charAt(0) = " "){
+        while (c.charAt(0) == " "){
             c = c.substring(1);
         }
         if (c.indexOf(nombre)==0){
