@@ -48,7 +48,7 @@ function setCookie(nombre, valor, expiracion){
     var d = new Date();
     d.setTime(d.getTime()+expiracion*24*60*60*1000);
     var expiracion = "expires="+d.toUTCString();
-    document.cookie = nombre + "=" +valor + ";" + expiracion += ";path=/";
+    document.cookie = nombre + "=" +valor + ";" + expiracion + ";path=/";
 }
 
 function getCookie(nombre){
