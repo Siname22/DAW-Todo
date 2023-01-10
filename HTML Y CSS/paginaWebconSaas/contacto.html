@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.sass">
+        <title>Contacto</title>
+    </head>
+    <body>
+        <header>
+            <div class="overlay">
+                <div class="menuylogo"><img  src="images/logo.png"></div>
+                <div><h1>Protisa</h1><h2>Para todos los estudiantes</h2></div>
+                <nav class="menuylogo"><h1>MENU</h1>
+                    <span>
+                            <span id="menu">
+                                <div><a href="index.html">Inicio</a></div>
+                                <div><a href="quienesSomos.html">Quienes Somos</a></div>
+                                <div><a href="prototipo.html">Nuestro Prototipo</a></div>
+                                <div><a href="contacto.html">Contacto</a></div>
+                            </span>
+                        </span>
+                </nav>
+            </div>
+        </header>
+        <div class="cuerpo">
+            <section>
+                <h3>SUBIREMOS LA APP EN PLAY STORE</h3>
+                <p>Necesitamos para colgarlo pagar 20€ como desarrollador.
+                    La subiremos gratuita pero con unas prestaciones limitadas y con anuncios.
+                    Si deseas no tener anuncios tendrás que pagar 1€.
+                    Esperamos que os haya servido de ayuda.</p>
+                <h3> NUESTRA UBICACIÓN</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041.557392658047!2d-3.
+                7575408493350557!3d40.3299795687342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4189f7d96566af%
+                3A0x288f0eb0bc3b3ffd!2sC.%20de%20la%20Rioja%2C%2070%2C%2028915%20Legan%C3%A9s%2C%20Madrid!5e0!3m2!1ses!2ses!
+                4v1667213434213!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <main>
+                <div class="contact_form">
+
+                    <div class="formulario">
+                        <h1>FORMULARIO DE CONTACTO</h1>
+                        <h3>ESCRIBENOS Y EN BREVE NOS PONDREMOS EN CONTACTO CONTIGO</h3>
+
+
+                        <form action="submeter-formulario.php" method="post">
+
+
+                            <p>
+                                <label for="nombre" class="colocar_nombre">Nombre
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                            </p>
+
+                            <p>
+                                <label for="email" class="colocar_email">Email
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                            </p>
+
+                            <p>
+                                <label for="telefono" class="colocar_telefono">Teléfono
+                                </label>
+                                <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                            </p>
+
+                            <p>
+                                <label for="website" class="colocar_website">Sitio web
+                                </label>
+                                <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+                            </p>
+
+                            <p>
+                                <label for="assunto" class="colocar_asunto">Asunto
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                            </p>
+
+                            <p>
+                                <label for="mensaje" class="colocar_mensaje">Mensaje
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                            </p>
+
+                            <button type="submit" name="enviar_formulario" id="enviar">Enviar</button>
+
+                            <p class="aviso">
+                                <span class="obligatorio"> * </span>los campos son obligatorios.
+                            </p>
+
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+
+    <footer>
+        <h1> Hecho por Raul Poblete Illescas</h1>
+    </footer>
+    </body>
+</html>
