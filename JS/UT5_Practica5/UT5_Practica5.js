@@ -12,11 +12,11 @@ function iniciar(){
     var modificarCookie = document.getElementById("modificarCookie");
     modificarCookie.addEventListener("click",crearModifCookie);
 
-    var leerCookie = document.getElementById("leerCookie");
-    leerCookie.addEventListener("click",leerCookie);
+    var leeCookie = document.getElementById("leerCookie");
+    leeCookie.addEventListener("click",leerCookie);
 
-    var borrarCookie = document.getElementById("borrarCookie");
-    borrarCookie.addEventListener("click",borrarCookie);
+    var borraCookie = document.getElementById("borrarCookie");
+    borraCookie.addEventListener("click",borrarCookie);
 }
 
 function verCookies(){
@@ -40,7 +40,6 @@ function leerCookie(){
 function borrarCookie(){
     var nombre = prompt("Introduzca el nombre de la cookie a borrar:");
     deleteCookie(nombre);
-
 }
 
 
@@ -56,7 +55,7 @@ function getCookie(nombre){
     var array = document.cookie.split(";");
     for (var i = 0; i<array.length; i++){
         var c = array[i];
-        while (c.charAt(0) = " "){
+        while (c.charAt(0) == ""){
             c = c.substring(1);
         }
         if (c.indexOf(nombre)==0){
