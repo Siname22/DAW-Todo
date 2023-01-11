@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UT6_Practica1</title>
+    <script type="text/javascript" src="UT6_Practica1.js"></script>
+
+    <style>
+        .miclase{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<!--Acceso y modificación de elementos del DOM.
+
+Crea en el body de tu código un <div> con 3 párrafos cuyos id sean “parrafo1", "parrafo2" y "parrafo3” respectivamente.
+ El texto que debe tener cada párrafo será, simplemente, “Este es el primer/segundo/tercer párrafo”.
+Crea un clase de estilos llamada .miClase{color:red}
+
+Crea 3 botones debajo de los párrafos cuyos id sean: “cambiarTextos”, “cambiarClases”, “quitarClases”. La funcionalidad
+a los 3 botones creados será: Al primero le asociaremos una función llamada cambiarTextos; al segundo, una función
+llamada cambiarClases; y al tercero una función quitarClases.
+
+Function cambiarTextos:
+Utilizando su identifacador, simplemente cambiaremos el primer párrafo para escribir “Primer párrafo cambiado”.
+Para cambiar el segundo, utilizando getElementsByTagName y cambiaremos su texto.
+Añade al párrafo 3 dentro del HTML el atributo class = “miClase”, e intenta cambiar el texto del párrafo utilizando
+getElementsByClassName.
+
+Function cambiarClases:
+Utilizando setAtribute, asigna al párrafo 1 la clase de estilos miClase.
+Por otro lado, cambia mediante className, la clase de estilos del párrafo 2.
+
+Function quitarClases:
+Quita con setAtribute el atributo class.
+Quita la clase de los párrafos 2 y 3 mediante .className.
+¿ Qué pasa si en vez de 3 párrafos, tuvieras 200?. Intenta programar la función del punto anterior, mediante un
+for utilizando getElementsByTagName(“p”).
+
+Prueba el script a fondo. ¿Ves algún comportamiento extraño? ¿Cómo podrías arreglarlo? -->
+
+<div>
+    <p id="parrafo1" > Este es el primer parrafo </p>
+    <p id="parrafo2" > Este es el segundo parrafo </p>
+    <p id="parrafo3" > Este es el tercer parrafo </p>
+
+
+    <button type="button" id="cambiaTextos">Cambiar Textos</button>
+    <button type="button" id="cambiaClases">Cambiar Clases</button>
+    <button type="button" id="quitaClases">Quitar Clases</button>
+</div>
+</body>
+</html>
