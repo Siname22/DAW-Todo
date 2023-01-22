@@ -1,69 +1,53 @@
 window.addEventListener("load", iniciar);
 
+
+
+
+
 function iniciar(){
-
-    var cambiaTexto = document.getElementById("cambiaTextos");
-    cambiaTexto.addEventListener("click",cambiarTextos);
-
-    var cambiaClase = document.getElementById("cambiaClases");
-    cambiaClase.addEventListener("click",cambiarClases);
-
-    var quitaClase = document.getElementById("quitaClases");
-    quitaClase.addEventListener("click",quitarClases);
+    var div = document.getElementById("div");
+    var creaParrafo = document.getElementById("creaParrafo");
+    creaParrafo.addEventListener("click",crearParrafo);
 
 }
 
 
 
 
-function cambiarTextos(){
-    var primerParrafo = document.getElementById("parrafo1");
-    primerParrafo.innerHTML = "Primer parrafo cambiado";
-    //Cojo el dom y lo guadro en var tipo array. cambia la pos2 texto
-    var arrayParrafo = new Array();
-    arrayParrafo = document.getElementsByTagName("p");
-    console.log(arrayParrafo);
+function crearParrafo(){
+    var p = document.createElement("p");
+    p.setAttribute("class", "miclase");
 
-    arrayParrafo[1].innerHTML = "Texto cambiando por bytagName";
+    var texto = document.getElementById("texto");
+    var textoP = document.createTextNode(texto.value);
 
-    var arrayParrafoClassName = new Array();
-    arrayParrafoClassName = document.getElementsByClassName("miclase");
-    console.log(arrayParrafoClassName);
-    arrayParrafoClassName[0].innerHTML="Texto cambiado con color rojo y por byClassName";
+    p.appendChild(textoP); //añade texto al div creado.
+
+    // añade el elemento creado y su contenido al DOM
+    div.appendChild(p);
+
 }
 
 
-function cambiarClases(){
-    var primerParrafo = document.getElementById("parrafo1");
-    primerParrafo.setAttribute("class", "miclase");
+function crearImagen(){
+    var ruta = prompt("Desde donde quieres coger la imagen: Pon la ruta completa");
 
-    //Segunda parte
-    var segundoParrafo = document.getElementById("parrafo2");
-    segundoParrafo.setAttribute("class", "miclase");
+    var imagen = document.createElement("img");
+    imagen.setAttribute("src", ruta);
 
-    var arrayParrafoClassName = new Array();
-    arrayParrafoClassName = document.getElementsByClassName("miclase");
+    div.appendChild(imagen)
+    //Falta validaciones
 
-    console.log(arrayParrafoClassName);
+
 }
 
-function quitarClases(){
-    /*
-    //Quitar la clase de parrafo1
-    var primerParrafo = document.getElementById("parrafo1");
-    primerParrafo.setAttribute("class", "");
+function quitarUltimo(){
 
-    //Segunda parte con ClassNAme
-    var arrayParrafoClassName = new Array();
-    arrayParrafoClassName = document.getElementsByClassName("miclase");
+    var ultimoHijo = div.lastChild;
+    div.removeChild(ultimoHijo);
+}
 
-    console.log(arrayParrafoClassName);
-    arrayParrafoClassName[0].setAttribute("class","");
-    arrayParrafoClassName[0].setAttribute("class","");
-    */
-
-    var arrayParrafosTagName = document.getElementsByTagName("p");
-    for (var i = 0; i < arrayParrafosTagName.length; i++) {
-        arrayParrafosTagName[i].setAttribute("class", "");
-    }
+function quitarPrimero(){
+    var primerHijo = div.firstChild;
+    div.removeChild(primerHijo);
 }
