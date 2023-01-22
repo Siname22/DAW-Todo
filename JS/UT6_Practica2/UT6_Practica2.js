@@ -1,11 +1,10 @@
 window.addEventListener("load", iniciar);
 
-
-
+var div;
 
 
 function iniciar(){
-    var div = document.getElementById("div");
+    div = document.getElementById("div2");
     var creaParrafo = document.getElementById("creaParrafo");
     creaParrafo.addEventListener("click",crearParrafo);
 
