@@ -12,10 +12,6 @@ function iniciar(){
     quitaClase.addEventListener("click",quitarClases);
 
 }
-
-
-
-
 function cambiarTextos(){
     var primerParrafo = document.getElementById("parrafo1");
     primerParrafo.innerHTML = "Primer parrafo cambiado";
