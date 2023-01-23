@@ -1,29 +1,39 @@
 window.addEventListener("load", iniciar);
 
-var div;
+var divPadre;
 
 
 function iniciar(){
-    div = document.getElementById("div2");
+    divPadre = document.getElementById("divPadre");
+
     var creaParrafo = document.getElementById("creaParrafo");
     creaParrafo.addEventListener("click",crearParrafo);
 
+    var creaImagen = document.getElementById("creaImagen");
+    creaImagen.addEventListener("click",crearImagen);
+
+    var borraUltimo = document.getElementById("borraUltimo");
+    borraUltimo.addEventListener("click",borraUltimo);
+
+    var borraPrimero = document.getElementById("borraPrimero");
+    borraPrimero.addEventListener("click",borraPrimero);
+
+   // var sustituyeParrafoVacio = document.getElementById("sustituyeParrafoVacio");
+    //sustituyeParrafoVacio.addEventListener("click",sustituirParrafoVacio);
+
 }
 
-
-
-
 function crearParrafo(){
-    var p = document.createElement("p");
-    p.setAttribute("class", "miclase");
+    var parrafo = document.createElement("p");
+    parrafo.setAttribute("class", "miclase");
 
     var texto = document.getElementById("texto");
+    texto.setAttribute("required", "true");
     var textoP = document.createTextNode(texto.value);
 
-    p.appendChild(textoP); //añade texto al div creado.
-
+    parrafo.appendChild(textoP); //añade texto al div creado.
     // añade el elemento creado y su contenido al DOM
-    div.appendChild(p);
+    divPadre.appendChild(parrafo);
 
 }
 
@@ -34,7 +44,7 @@ function crearImagen(){
     var imagen = document.createElement("img");
     imagen.setAttribute("src", ruta);
 
-    div.appendChild(imagen)
+    divPadre.appendChild(imagen)
     //Falta validaciones
 
 
