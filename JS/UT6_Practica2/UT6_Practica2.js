@@ -13,10 +13,10 @@ function iniciar(){
     creaImagen.addEventListener("click",crearImagen);
 
     var borraUltimo = document.getElementById("borraUltimo");
-    borraUltimo.addEventListener("click",borraUltimo);
+    borraUltimo.addEventListener("click",quitarUltimo);
 
     var borraPrimero = document.getElementById("borraPrimero");
-    borraPrimero.addEventListener("click",borraPrimero);
+    borraPrimero.addEventListener("click",quitarPrimero);
 
    // var sustituyeParrafoVacio = document.getElementById("sustituyeParrafoVacio");
     //sustituyeParrafoVacio.addEventListener("click",sustituirParrafoVacio);
@@ -42,6 +42,7 @@ function crearImagen(){
     var ruta = prompt("Desde donde quieres coger la imagen: Pon la ruta completa");
 
     var imagen = document.createElement("img");
+    imagen.setAttribute("width", "200px");
     imagen.setAttribute("src", ruta);
 
     divPadre.appendChild(imagen)
@@ -51,12 +52,11 @@ function crearImagen(){
 }
 
 function quitarUltimo(){
-
-    var ultimoHijo = div.lastChild;
-    div.removeChild(ultimoHijo);
+    var ultimoHijo = divPadre.lastChild;
+    divPadre.removeChild(ultimoHijo);
 }
 
 function quitarPrimero(){
-    var primerHijo = div.firstChild;
-    div.removeChild(primerHijo);
+    var primerHijo = divPadre.firstChild;
+    divPadre.removeChild(primerHijo);
 }
