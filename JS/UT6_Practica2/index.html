@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UT6_Practica1</title>
+    <script type="text/javascript" src="UT6_Practica2.js"></script>
+
+    <style>
+        .miclase{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<!--Creación, sustitución y borrado de elementos del DOM.
+
+Crea una plantilla HTML con el <style> exactamente igual que en el ejercicio anterior y donde ahora, en el <div>,
+tengas un <textarea cuyo id = “texto” y 5 botones que sean “crearParrafo”,”crearImagen” ,”borrarUltimo” ,”borrarPrimero”
+ y ”sustituirPrimeroVacío”.
+
+Function creaParrafo:
+
+Crear desde JS un elemento <p> cuyo texto sea el que escribamos en el textarea. Además, añade un atributo class = “miClase”.
+Este elemento <p> deberá estar contenido en el <div> existente.
+Function crearImagen:
+
+Añadir un elemento img con su atributo src. La ruta de alojamiento la preguntaremos desde un prompt al usuario.
+ De manera análoga a la primera función creada, añadiremos ese hijo a al elemento DIV.
+
+Function borrarUltimo:
+
+Quita el último elemento que contenga DIV.
+Function borrarPrimero:
+
+Quita el primer elemento que contenga DIV.
+Function sustituirPrimeroVacío:
+
+Crear un párafo P asociandole un texto que se denomine Vacío. En ese momento, busca la manera en que puedas sustituir
+el primer hijo por este nuevo párrafo que hemos creado. -->
+
+<div id="divPadre">
+
+    <button type="button" id="creaParrafo">Crear Parrafo</button>
+    <button type="button" id="creaImagen">Crear Imagen</button>
+    <button type="button" id="borraUltimo">Borrar Ultimo</button>
+    <button type="button" id="borraPrimero">Borrar Primero</button>
+    <button type="button" id="sustituyePrimeroVacio">Sustituir Primero Vacio</button>
+
+    <br>
+    <br>
+
+    <textarea id = texto> </textarea>
+</div>
+</body>
+</html>

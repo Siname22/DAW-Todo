@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>UT5_Practica2</title>
+        <script type="text/javascript" src="UT5_Practica2.js"></script>
+
+    </head>
+    <body onload="iniciar()">
+    <!--Ejercicio 1:
+    Crea un formulario HTML con dos elementos: uno select y otro datalist con los mismos datos.
+    A continuación, mediante código javascript, visualiza el contenido de los datos elegidos de cada elemento,
+    comentando las diferencias que encuentres a la hora de referenciarlos (obtener sus valores).
+    -->
+    <div id="formularioEjercicio1">
+        <h2>Ejercicio 1:</h2>
+        <form>
+            <select id="ej1Select">
+                <option>PNG</option>
+                <option>JPEG</option>
+                <option>GIF</option>
+                <option>TGA</option>
+            </select>
+            <p>Datalist:</p>
+            <input type="text" id="getValueDatalist" list="ej1Datalist">
+            <datalist id="ej1Datalist">
+                <option value="PNG">PNG</option>
+                <option value="JPEG">JPEG</option>
+                <option value="GIF">GIF</option>
+                <option value="TGA">TGA</option>
+            </datalist>
+            <p>
+                <input type="button" id="buttonComenzarEj1" onclick="cogerDatosSelectDatalist()" value="Coger los datos"/>
+            </p>
+        </form>
+    </div>
+    <p id="datosGuardados"></p>
+    <!--Ejercicio 2:
+    Crea un formulario HTML con dos controles o elementos: un select con opciones y el otro un select con agrupaciones
+    de opciones (optgroup) de manera que el primero permita deshabilitar un grupo o varios grupos de opciones del segundo.
+    -->
+    <div id="formularioEjercicio2">
+        <h2>Ejercicio 2:</h2>
+
+        <form>
+            <select id="selectChoseDisableGroup" onchange="disableSelect()" multiple size="4">
+                <option value="equiposFutbol">Equipos de Futbol</option>
+                <option value="formatosImagen">Tipos de formatos de Imagen</option>
+                <option value="marcasZapatos">Marcas de Zapatos</option>
+                <option value="marcasCoches">Marcas de Coches</option>
+            </select>
+
+            <select id="selectDisabled" multiple size ='20' disabled>
+
+                <optgroup label="Equipos de Futbol" id="equiposFutbol">
+                    <option>PSG</option>
+                    <option>Madrid</option>
+                    <option>Barcelona</option>
+                    <option>Leganes</option>
+                </optgroup>
+
+                <optgroup label="Formatos de Imagen" id="formatosImagen">
+                    <option>PNG</option>
+                    <option>JPEG</option>
+                    <option>GIF</option>
+                    <option>TGA</option>
+                </optgroup>
+
+                <optgroup label="Marcas de Zapatos" id="marcasZapatos">
+                    <option>Nike</option>
+                    <option>Adidas</option>
+                    <option>Vans</option>
+                    <option>Puma</option>
+                </optgroup>
+
+                <optgroup label="Marcas de Coches" id="marcasCoches">
+                    <option>Peougeot</option>
+                    <option>Citroen</option>
+                    <option>Mercedes</option>
+                    <option>Telsa</option>
+                </optgroup>
+
+            </select>
+        </form>
+
+    </div>
+    <p id="datosGuardados2"></p>
+    </body>
+</html>

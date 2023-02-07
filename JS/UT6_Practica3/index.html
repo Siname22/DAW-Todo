@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UT6_Practica1</title>
+    <script type="text/javascript" src="UT6_Practica3.js"></script>
+</head>
+<body>
+<!--Acceso y Navegación por elementos.
+
+Empecemos creando un fichero HTML con títulos H2 donde pongamos 4 Comunidades Autónomas de España (visualiza el siguiente
+enlace http://www.ordiecole.com/voyages/esp_com_aut.html y elige una que sea del NORTE, otra del SUR, ESTE y OESTE) y
+debajo de cada uno de ellas, deberás añadir un <ul> con sus respectivas provincias (<li>).
+
+Intenta ordenar estas listas con 4 DIV cuyos id sean “norte” y “sur”, “este, ”oeste”. El objetivo será, que cuando
+"pichemos" al elemento H2, podamos extraer, por un lado, el identificador del elemento DIV superior, y por otro lado,
+todos los elementos LI que contiene.
+Nota: Suponemos que NO sabemos el nombre de los ids que tenemos en nuestro HTML, por lo que NO podremos acceder mediante
+ los mismos.
+
+Function recorrerAdelante :
+
+Deberá tener un parámetro que capture la posición donde el usuario ha hecho click. Piensa en un parámetro predefinido
+que hemos estado utilizando en ejercicios anteriores para conseguir captar esta información.
+Guarda en una variable llamada “texto” la Comunidad que ha elegido el usuario de la siguiente manera: “Has elegido ” +
+texto del H2 seleccionado. Busca cómo podemos capturar el contenido del texto en el que el usuario ha hecho click.
+Acto seguido, busca como podemos referenciar al padre de dicho elemento H2. Una vez referenciado, deberás añadir a tu
+variable TEXTO el siguiente mensaje: “ que está situada en el ” + norte/sur/ este/oeste , dependiendo del ID del DIV
+padre seleccionado.
+
+Function recorrerHermanos:
+
+Accede al hermano del H2 seleccionado. Una vez encontrado, deberemos añadir a nuestra variable TEXTO, lo siguiente:
+“El número de provincias es: ” + …. Encuentra cómo podemos contabilizar el número de hijos de un elemento.
+
+Function recorrerHijos:
+Ahora vamos a ir recorriendo todos los hijos del elemento <ul> donde haya hecho click el usuario. Para ello, crea una
+variable donde guardemos la información del primer hijo, y simplemente mientras ese hijo sea distinto de null, añadiremos a nuestro TEXTO el nombre de cada una de las provincias.
+Por último, mostraremos el texto concatenado en el lugar que veas conveniente de tu página web.
+
+ -->
+    <div id="norte">
+        <h2>Cantabria</h2>
+        <ul hidden>
+            <li>Santander</li>
+        </ul>
+    </div>
+
+    <div id="sur">
+        <h2>Andalucia</h2>
+        <ul hidden>
+            <li>Almeria</li>
+            <li>Cádiz</li>
+            <li>Cárdoba</li>
+            <li>Granada</li>
+            <li>Huelva</li>
+            <li>Jaén</li>
+            <li>Málaga</li>
+            <li>Sevilla</li>
+        </ul>
+
+    </div>
+
+    <div id="este">
+        <h2>Cataluña</h2>
+        <ul hidden>
+            <li>Barcelona</li>
+            <li>Gerona</li>
+            <li>Lérida</li>
+            <li>Tarragona</li>
+        </ul>
+    </div>
+
+    <div id="oeste">
+        <h2>Extremadura</h2>
+        <ul hidden>
+            <li>Badajoz</li>
+            <li>Cáceres</li>
+        </ul>
+    </div>
+    <p id="textoResultado"></p>
+    </body>
+</html>

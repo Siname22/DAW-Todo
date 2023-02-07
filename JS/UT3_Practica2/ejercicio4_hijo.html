@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>UT3_Practica2</title>
+</head>
+    <body>
+        <h1> UT3 Practica 2 </h1>
+        <h3>Ventana Hija</h3>
+
+        <p>Mensaje para la ventana padre</p>
+        <input type='text' id='mensaje' placeholder='Me0nsaje'>
+        <button id='btnEnviarMensaje' onclick="enviarMensaje()">Enviar mensaje</button>
+
+        <br>
+        <p id="mensajeRecibido"></p>
+        <br>
+        <script>
+            var pintarMensaje = function(mensajeRecibido) {
+                document.getElementById("mensajeRecibido").innerHTML = "Mensaje recibido de padre: " + mensajeRecibido;
+            }
+
+            function enviarMensaje() {
+                window.opener.pintarMensaje(document.getElementById("mensaje").value);
+            };
+        </script>
+    </body>
+</html>
