@@ -1,0 +1,41 @@
+body{
+    margin-right: 5%;
+    margin-left: 5%;
+    background-color: cornsilk;
+    font-family: KacstArt, sans-serif;
+    font-size: 150%;
+    text-align: center;
+}
+h1{
+
+    text-transform: uppercase;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: initial;
+}
+p{
+    text-align: center;
+    text-transform: uppercase;
+}
+div{
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align: center;
+}
+button{
+    margin-top: 5%;
+}
+table {
+    width: 80%;
+    margin: 5%;
+    text-align: center;
+    background-color: #565044;
+    color: white;
+}
+th, td {
+    width: auto;
+}
+#resultado{
+    width: 100%;
+}

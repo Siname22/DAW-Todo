@@ -2,7 +2,6 @@ window.addEventListener("load", iniciar);
 
 var divPadre;
 
-
 function iniciar(){
     divPadre = document.getElementById("divPadre");
 
@@ -18,8 +17,8 @@ function iniciar(){
     var borraPrimero = document.getElementById("borraPrimero");
     borraPrimero.addEventListener("click",quitarPrimero);
 
-   // var sustituyeParrafoVacio = document.getElementById("sustituyeParrafoVacio");
-    //sustituyeParrafoVacio.addEventListener("click",sustituirParrafoVacio);
+    var sustituyePrimeroVacio = document.getElementById("sustituyePrimeroVacio");
+    sustituyePrimeroVacio.addEventListener("click",sustituirParrafoVacio);
 
 }
 
@@ -48,7 +47,6 @@ function crearImagen(){
     divPadre.appendChild(imagen)
     //Falta validaciones
 
-
 }
 
 function quitarUltimo(){
@@ -59,4 +57,14 @@ function quitarUltimo(){
 function quitarPrimero(){
     var primerHijo = divPadre.firstChild;
     divPadre.removeChild(primerHijo);
+}
+
+function sustituirParrafoVacio() {
+    var primerHijo = divPadre.firstChild;
+
+    var parrafo = document.createElement("p");
+    parrafo.setAttribute("id","Vacio");
+    parrafo.innerHTML = "vacio";
+
+    divPadre.replaceChild(parrafo, primerHijo);
 }
