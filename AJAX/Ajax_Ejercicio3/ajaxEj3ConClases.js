@@ -1,7 +1,5 @@
 window.addEventListener("load", iniciar);
-
 //---------------------------------------------------CLASES-------------------------------------------------------------
-
 //--------------------------------------------------CONCEPTOS-----------------------------------------------------------
 /*
 Las clases Conceptos y Concepto van orientadas al archivo ConceptosObtenerTodos.php.
